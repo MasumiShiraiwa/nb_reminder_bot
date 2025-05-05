@@ -32,9 +32,9 @@ app.listen(PORT, function () {
 // Global variable
 let global_data = {}
 const RETRY_COUNT_MAX = 5
-const domainEmail = "@donnguri"
-const ownerEmail = "14262@donnguri"
-const developerEmail = "14262@donnguri"
+const domainEmail = "@nbshinjuku"
+const ownerEmail = "14262@nbshinjuku"
+const developerEmail = "14262@nbshinjuku"
 
 // Env variable
 
@@ -45,7 +45,7 @@ const serviceAccount = process.env.LW_API_SERVICE_ACCOUNT
 const privatekey = process.env.LW_API_PRIVATEKEY.replace(/\\n/g, '\n'); // ローカルサーバの場合
 const botId = process.env.LW_API_BOT_ID
 
-const scope = "group.note, group.read, bot, bot.message, user.read, task"
+const scope = "bot, bot.message, user.read"
 
 
 let verifyBody = (req, res, next) => {
